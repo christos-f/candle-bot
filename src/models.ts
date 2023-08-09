@@ -9,8 +9,8 @@ export interface CandleTable {
     scent_name: string;
     candle_type: "single-wick" | "3-wick";
     price: number;
-    created_at: Date;
-    last_upated: Date;
+    created_at: Generated<Date>;
+    last_updated: Generated<Date>;
 }
 
 export type Candle = Selectable<CandleTable>
