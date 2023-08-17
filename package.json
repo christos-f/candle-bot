@@ -6,21 +6,24 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "tsc && node dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/cheerio": "^0.22.31",
     "@types/node": "^20.4.8",
+    "@types/nodemailer": "^6.4.9",
     "@types/pg": "^8.10.2",
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@types/cheerio": "^0.22.31",
     "cheerio": "^1.0.0-rc.12",
     "kysely": "^0.26.1",
     "node-fetch": "^3.3.2",
+    "nodemailer": "^6.9.4",
     "pg": "^8.11.2",
     "postgres": "^3.3.5"
   }
